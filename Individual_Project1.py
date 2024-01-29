@@ -11,6 +11,7 @@ app = Dash(
     external_scripts=external_script,
 )
 app.scripts.config.serve_locally = True
+server = app.server
 
 df = pd.read_csv('./Self-Introduction to IVIS24 (Responses).csv')
 
